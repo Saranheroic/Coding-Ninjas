@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/webp" href="images/SLIET.webp">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+     </head>
 <body>
     <header class="header"> <a href="#home" class="logo"> SLIET </a>
         
@@ -24,30 +25,24 @@
     
     </header>
     <section class="home" id="home">
-        
-        
-
-        <div class="home-img">
+        <form class="calendar">
+            <label for="date">Pick your date:</label>
+            <input type="date" id="date" required>
+            <button type="submit" class="btn">Book Now</button>
+            
+        </form>
+         <div class="home-img">
            
         </div>
         <div class="home-content">
-            
-             <a href="mailto:sarann2302@gmail.com" class="btn">Book Now</a>
-        </div>
-        
-<input type="date" id="birthday" name="birthday">
-    </section>  
-    
 
-   
+         </div>
+
+        </section>  
 
 
 
-
-
-
-
-
-    <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="index.js"></script>
 </body>
 </html>
