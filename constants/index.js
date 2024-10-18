@@ -1,4 +1,4 @@
-const professors = [
+export const professors = [
     {
         name: "Dr. Birmohan Singh",
         email: "birmohans@gmail.com",
@@ -26,7 +26,7 @@ const professors = [
 ]
 
 
-const associate_professors = [
+export const associate_professors = [
     {
         name: "Dr. Gurjinder Kaur",
         email: "gurjinder13@yahoo.com",
@@ -35,7 +35,7 @@ const associate_professors = [
     }
 ]
 
-const assistant_professors = [
+export const assistant_professors = [
     {
         name: "Dr. Amar Nath",
         email: "amarnath@sliet.ac.in",
@@ -93,7 +93,7 @@ const assistant_professors = [
 ]
 
 
-const contract_assistant_professors = [
+export const contract_assistant_professors = [
     {
         name: "Dr. Jatinder Pal Singh",
         email: "sachdeva.jp@gmail.com",
@@ -108,7 +108,7 @@ const contract_assistant_professors = [
     }
 ]
 
-const guest_teachers = [
+export const guest_teachers = [
     {
         name: "Abhishek",
         email: "",
