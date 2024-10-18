@@ -132,7 +132,7 @@ input[type="text"] {
     border: 1px solid var(--main-color); /* Border style */
     font-size: 1.4rem; /* Smaller font size than the button */
     width: 100%; /* Full width */
-    max-width: 300px; /* Maximum width */
+    max-width: 119px; /* Maximum width */
     margin-bottom: 1.5rem; /* Space below the input field */
     transition: border-color 0.3s; /* Smooth transition for focus */
 }
