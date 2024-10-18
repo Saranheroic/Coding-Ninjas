@@ -81,13 +81,7 @@ section{
     padding: 10rem 9% 10rem;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-}
+
 /* Style for the Book Now button */
 .btn {
     display: inline-block;
@@ -142,3 +136,28 @@ input[type="text"]:focus {
     border-color: var(--main-color); /* Change border color on focus */
     outline: none; /* Remove outline */
 }
+
+#fs{
+    
+    font-size: 50px;
+    padding: 40;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px
+    
+ 
+}
+
+.container div{
+    margin: 10px;
+    flex-basis: 20%;
+}
+img{
+    border-radius: 20px;
+}
+
