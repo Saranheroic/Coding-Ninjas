@@ -7,3 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         dateFormat: "y-d-m"
     });
 });
+const namesList = document.getElementById('names-list');
+const names = ['Alice', 'Bob', 'Charlie', 'David'];
+const nameItems = names.map(name => `<li>${name}</li>`);
+namesList.innerHTML = nameItems.join('');
