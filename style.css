@@ -26,6 +26,7 @@ html{
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+   
 
 }
 
@@ -137,12 +138,10 @@ input[type="text"]:focus {
     outline: none; /* Remove outline */
 }
 
-#fs{
-    
-    font-size: 50px;
-    padding: 40;
-    display: flex;
-    justify-content: center;
+#fs {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
 }
 .container{
     display: flex;
@@ -157,7 +156,99 @@ input[type="text"]:focus {
     margin: 10px;
     flex-basis: 20%;
 }
-img{
-    border-radius: 20px;
+
+section {
+    min-height: 100vh;
+    padding: 12rem 9%;
+}
+.professor-card {
+    width: 250px;
+    text-align: center;
+    margin: 1.5rem;
+    cursor: pointer;
 }
 
+.professor-card img {
+    width: 100%;
+    height: 250px;
+    
+    object-fit: cover;
+  
+}
+
+
+.professor-card h1,
+.professor-card h3,
+.professor-card p {
+    margin-top: 1rem;
+}
+.professor-card {
+    width: 60vmin;
+    height: 50vmin;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+:root {
+    --main-color: #2E8B57; 
+    --bg-color: #f9f9f9;   
+    --second-bg-color: #d2ffd1; 
+    --text-color: black;
+}
+
+.professor-card img {
+    width: 60vmin;
+    height: 50vmin;
+    display: grid;
+    place-content: center;
+    object-fit: cover;
+    border: 5px solid transparent;
+    border-radius: 2em;
+    
+    /* Border Gradient Effect */
+    --border-angle: 0turn;
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #213, /* Dark gradient start */
+        #112 5%, /* Dark shade */
+        #112 60%, /* Gradient middle */
+        #213 95% /* Dark gradient end */
+    );
+    
+    /* Gradient border animation */
+    --gradient-border: conic-gradient(
+        from var(--border-angle), 
+        transparent 25%, 
+        var(--main-color) 50%,  /* Sea green */
+        var(--second-bg-color) 75%, /* Light green */
+        transparent
+    );
+    
+    background: 
+        var(--main-bg) padding-box,   /* Background image for padding */
+        var(--gradient-border) border-box, /* Gradient border */
+        var(--main-bg) border-box; /* Background gradient */
+    
+    background-position: center center;
+    
+    /* Animation for the border spinning */
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin { 
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+.professor-card img:hover {
+    animation-play-state: paused; /* Pauses the animation on hover */
+}
