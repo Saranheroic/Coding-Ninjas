@@ -18,177 +18,22 @@
 
 
         <nav class="navbar">
-            <a href="#Professors" class="active">Professors</a>
-            <a href="#MyBookings">MyBookings</a>
-            <a href="#Projects">Projects</a>
-            <a href="#Login/Register">Login/Register</a>
-
+            <a href="#home"  onclick="changeContent('home')">Home</a>
+            <a href="#Professors"  onclick="changeContent('Professors')">Professors</a> 
+            <a href="#MyBookings" onclick="changeContent('MyBookings')">MyBookings</a>
+            <a href="#about-us" onclick="changeContent('AboutUs')">About Us</a>
+            <a href="#Login/Register" onclick="changeContent('login')">Login/Register</a>    
         </nav>
 
     </header>
-    <section class="home" id="home">
-        <h1 id="fs">Featured Staffs</h1>
-        <div class="container">
-            <div class="professor-card">
-                <img src="staff-images/Dr. Birmohan Singh.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Birmohan Singh</h1>
-                <h3>education :Ph.D., M.E.</h3>
-                <p>birmohans@gmail.com</p>
+    <div id="content"></div>
+    <form class="calendar">
+        <label for="date">
+            <input type="date" id="date" placeholder="pick your date" required>
+            <button type="submit" class="btn">Book Now</button>
 
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Amar Nath.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Amar Nath</h1>
-                <h3>education : Ph.D., M. Tech.</h3>
-                <p>amarnath@sliet.ac.in</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Gurjinder Kaur.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Gurjinder Kaur</h1>
-                <h3>education : B.E. M.S. Ph.D.</h3>
-                <p>gurjinder13@yahoo.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Jagdeep Singh.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Jagdeep Singh</h1>
-                <h3>education : Ph.D., M.Tech.</h3>
-                <p>jagdeepknit@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Major Singh Goraya.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Major Singh Goraya</h1>
-                <h3> education : Ph.D., M.Tech, B.Tech.</h3>
-                <p>mjrsingh@yahoo.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Manminder Singh.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Manminder Singh</h1>
-                <h3>education : ".Tech, M.Tech, Ph. D </h3>
-                <p>manminderldh@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Manoj Sachan.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Manoj Sachan</h1>
-                <h3>education : B.Tech, M.E, Ph.D</h3>
-                <p>manojsachan@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Preetpal Kaur Buttar.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Preetpal Kaur Buttar</h1>
-                <h3> education : PhD </h3>
-                <p> preetpal@sliet.ac.in</p>
-
-            </div>
-        </div>
-        <form class="calendar">
-            <label for="date">
-                <input type="date" id="date" placeholder="pick your date" required>
-                <button type="submit" class="btn">Book Now</button>
-
-        </form>
-
-    </section>
-    <section>
-        <h1 id="fs">Professors</h1>
-        <div class="container">
-            <div class="professor-card">
-                <img src="staff-images/Dr. Birmohan Singh.jpg" style="width: 200px; height: 200px" />
-                
-                <h1>Dr. Birmohan Singh,</h1>
-                <h3>education : Ph.D., M.E.</h3>
-                <p>birmohans@gmail.com,</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Amar Nath.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Amar Nath</h1>
-                <h3>education : Ph.D., M. Tech.</h3>
-                <p> amarnath@sliet.ac.in</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Gurjinder Kaur.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Gurjinder Kaur</h1>
-                <h3>education : B.E. M.S. Ph.D.</h3>
-                <p> gurjinder13@yahoo.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Jagdeep Singh.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Jagdeep Singh</h1>
-                <h3>education : Ph.D., M.Tech.</h3>
-                <p>jagdeepknit@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Major Singh Goraya.jpg" style="width: 200px; height: 200px" />
-                <h1>  Dr. Major Singh Goraya</h1>
-                <h3> education : Ph.D., M.Tech, B.Tech.</h3>
-                <p> mjrsingh@yahoo.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Manminder Singh.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Manminder Singh</h1>
-                <h3>education : ".Tech, M.Tech, Ph. D </h3>
-                <p> manminderldh@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Manoj Sachan.jpg" style="width: 200px; height: 200px" />
-                <h1>Dr. Manoj Sachan</h1>
-                <h3>education : B.Tech, M.E, Ph.D</h3>
-                <p>manojsachan@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Preetpal Kaur Buttar.jpg" style="width: 200px; height: 200px" />
-                <h1>  Dr. Preetpal Kaur Buttar</h1>
-                <h3> education : PhD </h3>
-                <p>  preetpal@sliet.ac.in</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Tajinder Singh.jpg" style="width: 200px; height: 200px" />
-                <h1>  Dr. Tajinder Singh</h1>
-                <h3>education : Ph.D </h3>
-                <p> tajindersingh@sliet.ac.in </p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Utkarsh.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. Utkarsh</h1>
-                <h3> education : Ms </h3>
-
-
-            </div>
-            <div class="professor-card">   
-                <img src="staff-images/Dr. VINOD KUMAR VERMA.jpg" style="width: 200px; height: 200px" />
-                <h1> Dr. VINOD KUMAR VERMA</h1>
-                <p> vinod5881@gmail.com</p>
-
-            </div>
-            <div class="professor-card">
-                <img src="staff-images/Dr. Jagdeep Singh.jpg" style="width: 200px; height: 200px" />
-                <h1> Jagdeep Singh</h1>
-                <h3> education : PhD </h3>
-                <p> jagdeepknit@gmail.com</p>
-
-            </div>
-        </div>
-        <form class="calendar">
-            <label for="date">
-                <input type="date" id="date" placeholder="pick your date" required>
-                <button type="submit" class="btn">Book Now</button>
-
-        </form>
-    </section>
+    </form>
+    
 
 
 
